@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <title>Digital Alarm Clock</title>
+</head>
+<body>
+    <div class="clock">
+        <div class="time hours">
+            <span class="value hr" id="hours">0</span> 
+            <div class="name">HOURS</div>
+        </div>
+        <div class="time minutes">
+            <span class="value min" id="minutes">0</span>
+            <div class="name">MINUTES</div>
+        </div>
+        <div class="time seconds">
+            <span class="value sec" id="seconds">0</span>
+            <div class="name">SECONDS</div>
+        </div>
+    </div>
+    <div class="reverse">
+        <div class="clock">
+            <div class="time hours">
+                <span class="value hr" id="refhours">0</span> 
+                <div class="name">HOURS</div>
+            </div>
+            <div class="time minutes">
+                <span class="value min" id="refmin">0</span>
+                <div class="name">MINUTES</div>
+            </div>
+            <div class="time seconds">
+                <span class="value sec" id="refsec">0</span>
+                <div class="name">SECONDS</div>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
