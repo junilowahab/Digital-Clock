@@ -8,6 +8,7 @@ function counter() {
     var timer;
     var sec = 0;
     var min = -1;
+    var hr = 0;
     timer = setInterval(() => {
         second.innerHTML = sec;
         sec++;
@@ -18,6 +19,13 @@ function counter() {
         if (sec == 1) {
             min++;
             minute.innerHTML = min;
+        }
+        if (min == 60){
+            min = 0;
+        }
+        if (min == 0) {
+            hr++
+            hr.innerHTML = hr;
         }
     }, 1000);
     
@@ -31,18 +39,8 @@ let reflectedMinute = document.getElementById('refmin');
 
 function reverseCounter() {
     var reflectionTimer;
-    var refSec = 0;
-    // var refMin = -1;
     reflectionTimer = setInterval(() => {
-        reflectedSecond.innerHTML = refSec;
-        refSec++;
-        if(refSec == 60){
-            refSec = 0;
-        }
-        // if(refSec = 1){
-        //     refMin++;
-        //     reflectedMinute.innerHTML = refMin;
-        // }
+        reflectedSecond.innerHTML = second.innerHTML;
         reflectedMinute.innerHTML = minute.innerHTML;
     }, 1000);
 }
