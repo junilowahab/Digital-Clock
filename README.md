@@ -1,3 +1,3 @@
 # Digital-Clock
 
-I recreated this from someones project. I found it extremely creative and beautiful.
+This is a recreation project i found from https://www.instagram.com/coding.stella/.  I found it extremely creative and beautiful.
