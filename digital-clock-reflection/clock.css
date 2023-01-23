@@ -69,3 +69,36 @@ body{
 .reverse .time.seconds{
     background-image: linear-gradient(black, #ff006a);
 }
+
+@media only screen and (max-width: 400px) {
+    .body{
+        
+    }
+
+    .clock{
+        flex-direction: column;
+    }
+
+    .reverse{
+        transform: perspective(200px) rotateX(220deg);
+        height: 260px;
+    }
+
+    .reverse .time{
+        background-image: none;
+        width: 310px;
+    }
+
+    .reverse .time.seconds{
+        background-image: none;
+    }
+
+    .reverse .time .name{
+        width: 310px;
+    }
+
+    .time{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
