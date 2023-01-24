@@ -70,31 +70,52 @@ body{
     background-image: linear-gradient(black, #ff006a);
 }
 
-@media only screen and (max-width: 400px) {
-    .body{
-        
-    }
+button{
+    align-self: end;
+    margin-right: 50px;
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-image: linear-gradient(to right, #1d89e2, #ff006a);
+    border-radius: 10px;
+    border: none;
+}
 
+#reverse-button{
+    transform: scaleY(-1);
+    opacity: .3;
+    transform: perspective(100px) rotateX(235deg);
+    margin-top: -4px;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px) {
     .clock{
         flex-direction: column;
     }
 
     .reverse{
-        transform: perspective(200px) rotateX(220deg);
-        height: 260px;
+        height: 130px;
     }
 
     .reverse .time{
         background-image: none;
-        width: 310px;
+        width: 200px;
+        display: none;
     }
 
     .reverse .time.seconds{
-        background-image: none;
+        display: flex;
+        background-image: linear-gradient(black, #ff006a);
+        transform: perspective(200px) rotateX(310deg);
     }
 
     .reverse .time .name{
-        width: 310px;
+        width: 200px;
+        font-size: 25px;
     }
 
     .time{

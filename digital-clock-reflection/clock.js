@@ -1,6 +1,7 @@
 let second = document.getElementById('seconds');
 let minute = document.getElementById('minutes');
 let hour = document.getElementById('hours');
+let button = document.getElementById('button');
 
 //Function for counting
 
@@ -28,7 +29,7 @@ function counter() {
             hr.innerHTML = hr;
         }
     }, 1000);
-    
+    button.innerHTML = 'STOP';
 
 }
 
@@ -45,5 +46,5 @@ function reverseCounter() {
     }, 1000);
 }
 
-second.addEventListener('click', counter);
-second.addEventListener('click', reverseCounter);
+button.addEventListener('click', counter);
+button.addEventListener('click', reverseCounter);
